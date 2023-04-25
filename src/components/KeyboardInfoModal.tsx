@@ -12,7 +12,7 @@ const KeyboardInfoModal: React.FC<Props> = ({modalOpen, setModalOpen}) => {
     const onClick: MouseEventHandler = () => {
         setModalOpen(() => false)
     }
-    
+
     return (
         <Modal
             isOpen={modalOpen}
@@ -38,14 +38,14 @@ const KeyboardInfoModal: React.FC<Props> = ({modalOpen, setModalOpen}) => {
                 </li>
                 <li>
                     <strong>macOS</strong>: Enable the Vietnamese keyboard from System
-                    Preferences &gt; Keyboard &gt; Input Sources. Click on the &amp;+&amp; button,
+                    Preferences &gt; Keyboard &gt; Input Sources. Click on the &quot;+&quot; button,
                     select Vietnamese, and add it. To switch between keyboards, press{" "}
                     <code>Control + Space</code>.
                 </li>
                 <li>
                     <strong>Linux (GNOME)</strong>: Add Vietnamese input method by
                     navigating to Settings &gt; Region & Language &gt; Input Sources. Click on
-                    the &amp;+&amp; button, select Vietnamese, and add it. Switch between
+                    the &quot;+ &quot; button, select Vietnamese, and add it. Switch between
                     keyboards using <code>Super + Space</code>.
                 </li>
             </ul>

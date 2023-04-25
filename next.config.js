@@ -2,10 +2,7 @@
 const nextConfig = {
     reactStrictMode: true,
     output: 'export',
-    basePath: '/viet-typing-tutor',
-    experimental: {
-        appDir: true,
-    },
+    basePath: '/viet-typing-tutor'
 }
 
 module.exports = nextConfig
