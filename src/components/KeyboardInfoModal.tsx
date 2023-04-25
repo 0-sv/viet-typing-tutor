@@ -16,6 +16,7 @@ const KeyboardInfoModal: React.FC<Props> = ({modalOpen, setModalOpen}) => {
     return (
         <Modal
             isOpen={modalOpen}
+            onRequestClose={onClick}
             className="w-3/4 md:w-1/2 mx-auto mt-16 p-4 bg-white rounded-lg border border-gray-300 shadow-md"
         >
             <button
@@ -45,7 +46,7 @@ const KeyboardInfoModal: React.FC<Props> = ({modalOpen, setModalOpen}) => {
                 <li>
                     <strong>Linux (GNOME)</strong>: Add Vietnamese input method by
                     navigating to Settings &gt; Region & Language &gt; Input Sources. Click on
-                    the &quot;+ &quot; button, select Vietnamese, and add it. Switch between
+                    the &quot;+&quot; button, select Vietnamese (US), and add it. Switch between
                     keyboards using <code>Super + Space</code>.
                 </li>
             </ul>

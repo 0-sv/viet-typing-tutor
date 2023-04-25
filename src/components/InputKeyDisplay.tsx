@@ -12,12 +12,12 @@ const InputKeyDisplay: React.FC<Props> = ({lastKeyPressed, setLastKeyPressed}) =
 
     return (
         <div className="flex flex-col items-center">
+            <p className="mt-4 text-lg">{lastKeyPressed && `Key pressed: ${lastKeyPressed}`}</p>
             <input
                 type="text"
                 className="px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
                 onKeyDown={onKeyDown}
             />
-            <p className="mt-4 text-lg">{lastKeyPressed && `Key pressed: ${lastKeyPressed}`}</p>
         </div>
     );
 };
