@@ -1,8 +1,11 @@
-import {KeyboardEventHandler, useState} from 'react';
+import React, {Dispatch, KeyboardEventHandler, SetStateAction} from 'react';
 
-const InputKeyDisplay = () => {
-    const [lastKeyPressed, setLastKeyPressed] = useState('');
+interface Props {
+    lastKeyPressed: string;
+    setLastKeyPressed: Dispatch<SetStateAction<string>>;
+}
 
+const InputKeyDisplay: React.FC<Props> = ({lastKeyPressed, setLastKeyPressed}) => {
     const onKeyDown: KeyboardEventHandler = (event) => {
         setLastKeyPressed(event.key);
     };
