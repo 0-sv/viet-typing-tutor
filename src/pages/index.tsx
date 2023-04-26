@@ -16,7 +16,6 @@ interface Dictionary {
 }
 
 export default function Home() {
-    const [lastKeyPressed, setLastKeyPressed] = useState('');
     const [modalOpen, setModalOpen] = useState(false);
     const [data, setData] = useState<Dictionary>({});
     const [randomKey, setRandomKey] = useState('')
@@ -46,6 +45,7 @@ export default function Home() {
             className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
         >
             <code className="font-mono font-bold">viet-typing-tutor (telex)</code>
+            <hr className="border-t border-white h-0.5 my-4"/>
             <div>
                 <label>word:</label>
                 <label
@@ -64,11 +64,13 @@ export default function Home() {
                     className="block text-sm font-medium border border-gray-300">{data[randomKey]?.telex}
                 </label>
             </div>
-            <InputKeyDisplay lastKeyPressed={lastKeyPressed} setLastKeyPressed={setLastKeyPressed}/>
-            <KeyboardInfoModal modalOpen={modalOpen} setModalOpen={setModalOpen}/>
-            <div>
-                <KeyboardButton setModalOpen={setModalOpen}/>
+            <div className="flex space-x-4">
+                <InputKeyDisplay setRandomKey={() => setRandomKey(() => getRandomKey())}/>
+                <span role="img" aria-label="keyboard" className="text-4xl">➡️</span>
+
             </div>
+            <KeyboardButton setModalOpen={setModalOpen}/>
+            <KeyboardInfoModal modalOpen={modalOpen} setModalOpen={setModalOpen}/>
         </main>
     )
 }

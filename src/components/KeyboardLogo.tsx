@@ -7,7 +7,7 @@ interface Props {
 const KeyboardButton: React.FC<Props> = ({setModalOpen}) => {
     return (
         <button onClick={() => setModalOpen(true)}>
-      <span role="img" aria-label="keyboard">
+      <span role="img" aria-label="keyboard" className="text-4xl">
         ⌨️
       </span>
         </button>

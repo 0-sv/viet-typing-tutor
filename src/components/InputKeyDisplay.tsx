@@ -1,22 +1,31 @@
-import React, {Dispatch, KeyboardEventHandler, SetStateAction} from 'react';
+import React, {KeyboardEventHandler, useRef} from 'react';
 
 interface Props {
-    lastKeyPressed: string;
-    setLastKeyPressed: Dispatch<SetStateAction<string>>;
+    setRandomKey: CallableFunction
 }
 
-const InputKeyDisplay: React.FC<Props> = ({lastKeyPressed, setLastKeyPressed}) => {
+const InputKeyDisplay: React.FC<Props> = ({setRandomKey}) => {
+    const inputRef = useRef<HTMLInputElement>(null);
+
+    const handleClearInput = () => {
+        if (inputRef.current)
+            inputRef.current.value = '';
+    };
+
     const onKeyDown: KeyboardEventHandler = (event) => {
-        setLastKeyPressed(event.key);
+        if (event.key === 'Enter') {
+            setRandomKey()
+            handleClearInput()
+        }
     };
 
     return (
         <div className="flex flex-col items-center">
-            <p className="mt-4 text-lg">{`Key pressed: ${lastKeyPressed}`}</p>
             <input
                 type="text"
                 className="text-black px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
                 onKeyDown={onKeyDown}
+                ref={inputRef}
             />
         </div>
     );
