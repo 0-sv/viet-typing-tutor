@@ -38,5 +38,85 @@
   "giai điệu": {
     "telex": "giai ddieeju",
     "translation": "melody"
+  },
+  "sản phẩm": {
+    "telex": "sanf phaarm",
+    "translation": "product"
+  },
+  "sau": {
+    "telex": "sau",
+    "translation": "behind"
+  },
+  "đánh bại": {
+    "telex": "ddanhf baats",
+    "translation": "beat"
+  },
+  "ngủ": {
+    "telex": "nguwj",
+    "translation": "sleep"
+  },
+  "thanh": {
+    "telex": "thanh",
+    "translation": "bar"
+  },
+  "giọng nói": {
+    "telex": "giowng nois",
+    "translation": "voice"
+  },
+  "cung cấp cho": {
+    "telex": "cung caps cho",
+    "translation": "give"
+  },
+  "phục vụ": {
+    "telex": "phurc vuw",
+    "translation": "serve"
+  },
+  "hiện nay": {
+    "telex": "hieejn nay",
+    "translation": "present"
+  },
+  "chọn": {
+    "telex": "choons",
+    "translation": "pick"
+  },
+  "lặp lại": {
+    "telex": "lajp laij",
+    "translation": "repeat"
+  },
+  "tăng": {
+    "telex": "tawng",
+    "translation": "rose"
+  },
+  "trưởng": {
+    "telex": "truwowfng",
+    "translation": "chief"
+  },
+  "vấn đề": {
+    "telex": "vasn ddees",
+    "translation": "matter"
+  },
+  "phần": {
+    "telex": "phasn",
+    "translation": "section"
+  },
+  "khi": {
+    "telex": "khi",
+    "translation": "case"
+  },
+  "gia đình": {
+    "telex": "gia ddiw'nhs",
+    "translation": "family"
+  },
+  "sân": {
+    "telex": "saan",
+    "translation": "pitch"
+  },
+  "dày": {
+    "telex": "dasy",
+    "translation": "thick"
+  },
+  "đồng ý": {
+    "telex": "ddoofng yf",
+    "translation": "agree"
   }
 }
